@@ -34,7 +34,7 @@ public String getTitle() {
   }
 
   public void setTitle(String title) {
-	log.info("Test Page entry");  
+    log.info("Test Page entry");  
     this.title = title;
     
   }
