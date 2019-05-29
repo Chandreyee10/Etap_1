@@ -27,7 +27,7 @@ import java.util.logging.Logger;
 @PageObject
 public class SignInPage extends AemAuthorPage<SignInPage>{
 
-         
+          Logger log= Logger.getAnonymousLogger();
 	  @FindBy(id="inputUsername") //method used to find WebElement, in that case Id
 	  private WebElement loginTextbox;
 	  
@@ -42,6 +42,7 @@ public class SignInPage extends AemAuthorPage<SignInPage>{
 	      loginTextbox.sendKeys(username);
 	      passwordTextBox.sendKeys(password);
 	      loginButton.click();
+	      log.info("Login Page");
 	      
 	  }
 
