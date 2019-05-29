@@ -39,10 +39,17 @@ public class SignInPage extends AemAuthorPage<SignInPage>{
 
 	  public void login(String username, String password) {
 		// login method prepared according to Page Object Pattern
-	      loginTextbox.sendKeys(username);
-	      passwordTextBox.sendKeys(password);
-	      loginButton.click();
-	      log.info("Login Page");
+	       if (username.equals ("admin") && password.equals("admin"))
+		  {
+	            loginTextbox.sendKeys(username);
+	            passwordTextBox.sendKeys(password);
+	            loginButton.click();
+	            log.info("Login Page");
+	       }
+	        else
+		     log.info("User Id and Password are not valid");
+		       
+		   
 	      
 	  }
 
