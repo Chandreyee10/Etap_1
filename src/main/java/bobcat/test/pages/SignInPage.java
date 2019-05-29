@@ -27,7 +27,7 @@ import java.util.logging.Logger;
 @PageObject
 public class SignInPage extends AemAuthorPage<SignInPage>{
 
-          log.info("Login Page entry");  
+         
 	  @FindBy(id="inputUsername") //method used to find WebElement, in that case Id
 	  private WebElement loginTextbox;
 	  
