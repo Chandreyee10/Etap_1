@@ -21,6 +21,8 @@ import com.cognifide.qa.bb.modules.BobcatRunModule;
 import com.cognifide.qa.bb.page.BobcatPageFactory;
 import com.google.inject.Inject;
 
+import java.util.logging.Logger;
+
 
 @PageObject
 public class SignInPage extends AemAuthorPage<SignInPage>{
@@ -40,6 +42,7 @@ public class SignInPage extends AemAuthorPage<SignInPage>{
 	      loginTextbox.sendKeys(username);
 	      passwordTextBox.sendKeys(password);
 	      loginButton.click();
+	      log.info("Login Page entry");  
 	  }
 
 	}
