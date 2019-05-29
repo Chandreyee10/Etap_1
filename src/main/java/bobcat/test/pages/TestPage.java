@@ -34,12 +34,13 @@ public String getTitle() {
   }
 
   public void setTitle(String title) {
-    log.info("Test Page entry");  
+      
     this.title = title;
     
   }
 
   public boolean isDisplayed() {
+	  log.info("Test Page entry");
     return bobcatWait.isConditionMet(ExpectedConditions.titleIs(getTitle()));
   }
 
