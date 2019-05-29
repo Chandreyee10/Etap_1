@@ -64,6 +64,7 @@ public class AuthorizationTest {
 				
 			}
 		assertTrue(testpage.open().isDisplayed());
+		System.out.println("This is it");
 		/*Code for Login Page end */
 	    
 		/*Code for Registartion Page start */
