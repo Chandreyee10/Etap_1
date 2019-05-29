@@ -1,0 +1,29 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "AEM 6.4 Base Tests",
+    "children" : [ {
+      "name" : "Login to AEM",
+      "children" : [ {
+        "name" : "Login to AEM and open Test page",
+        "children" : [ {
+          "name" : "loginTest()",
+          "uid" : "ed961673e4008704",
+          "parentUid" : "0e2d5830eba62b28184cd05d6ae14856",
+          "status" : "passed",
+          "time" : {
+            "start" : 1559132242684,
+            "stop" : 1559132274927,
+            "duration" : 32243
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "0e2d5830eba62b28184cd05d6ae14856"
+      } ],
+      "uid" : "d28c5c9df6ec0f418ac07ec42c8b70ee"
+    } ],
+    "uid" : "34b8abb380e4e17e0c1ce87fae512158"
+  } ]
+}

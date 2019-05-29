@@ -1,0 +1,21 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "test.bobcat.login.AuthorizationTest",
+    "children" : [ {
+      "name" : "loginTest()",
+      "uid" : "ed961673e4008704",
+      "parentUid" : "412c4df99fee3533baecd95d6e677d3a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1559132242684,
+        "stop" : 1559132274927,
+        "duration" : 32243
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "test.bobcat.login.AuthorizationTest"
+  } ]
+}

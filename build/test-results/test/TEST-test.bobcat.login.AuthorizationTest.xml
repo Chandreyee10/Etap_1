@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="test.bobcat.login.AuthorizationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-05-29T12:17:22" hostname="DIN39000234" time="32.426">
+  <properties/>
+  <testcase name="loginTest()" classname="test.bobcat.login.AuthorizationTest" time="32.426"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Starting ChromeDriver 74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}) on port 32585
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+May 29, 2019 5:47:21 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+]]></system-err>
+</testsuite>
