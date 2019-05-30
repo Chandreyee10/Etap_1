@@ -37,18 +37,21 @@ public class SignInPage extends AemAuthorPage<SignInPage>{
 	  @FindBy(id="loginButton")
 	  private WebElement loginButton;
 
-	  public void login(String username, String password) {
+	  public Boolean login(String username, String password) {
 		// login method prepared according to Page Object Pattern
 	       if (username.equals ("admin") && password.equals("admin"))
-		  {
+	       {
 	            loginTextbox.sendKeys(username);
 	            passwordTextBox.sendKeys(password);
 	            loginButton.click();
 	            log.info("Login Page");
+		    return true;
 	       }
 	        else
+		{
 		     log.info("User Id and Password are not valid");
-		       
+		     return false;
+		}
 		   
 	      
 	  }
