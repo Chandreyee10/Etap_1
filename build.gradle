@@ -59,7 +59,7 @@ gradle.projectsEvaluated {
 }
 
 allure {
-    version = '2.10.0'
+    version = '2.7.0'
     autoconfigure = true
     aspectjweaver = true
     aspectjVersion = '1.8.10'
