@@ -40,7 +40,7 @@ public String getTitle() {
   }
 
   public boolean isDisplayed() {
-	  log.info("Test Page entry");
+    log.info("Test Page entry");
     return bobcatWait.isConditionMet(ExpectedConditions.titleIs(getTitle()));
   }
 
