@@ -53,7 +53,6 @@ public class AuthorizationTest {
 			
 		}
 		Boolean flag=signinpage.login("11", "admin1");
-		signinpage.open().login("chandreyee","chandreyee");
 		if (flag==true) 
 		{
 		     TestPage testpage = bobcatPageFactory.create("/content/etap/en.html", TestPage.class);
@@ -63,8 +62,8 @@ public class AuthorizationTest {
 			catch(Exception e) {
 				
 			}
-		assertTrue(testpage.open().isDisplayed());
-		System.out.println("This is it");
+		     assertTrue(testpage.open().isDisplayed());
+		     System.out.println("This is it");
 		}
 		else
 		{
