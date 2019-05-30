@@ -19,6 +19,8 @@ import io.qameta.allure.Story;
 import test.bobcat.pages.SignInPage;
 import test.bobcat.pages.TestPage;
 
+import java.util.logging.Logger;
+
 /**
  * Test for presenting how to log in to the page.
  */
@@ -39,11 +41,7 @@ public class AuthorizationTest {
 	@Story("Login to AEM and open Test page")
 	@Description("Login to author instance and open test page")
 	public void loginTest() throws ActionException {
-		//TestPage testpage = bobcatPageFactory.create("/content/etap/en/homepage.html", TestPage.class);
-		/* Login to Author instance and opening the Home Page */
-		/*TestPage testpage = bobcatPageFactory.create("/content/we-retail/us/en.html", TestPage.class);
-		controller.execute(AemActions.LOG_IN);
-		assertTrue(testpage.open().isDisplayed());*/
+		Logger log= Logger.getAnonymousLogger();
 		
 		/*Code for Login Page start */
 		SignInPage signinpage = bobcatPageFactory.create("/content/etap/LoginPage.html", SignInPage.class);
@@ -54,26 +52,25 @@ public class AuthorizationTest {
 		catch(Exception e) {
 			
 		}
-		
+		Boolean flag=signinpage.login("11", "admin1");
 		signinpage.open().login("chandreyee","chandreyee");
-		TestPage testpage = bobcatPageFactory.create("/content/etap/en.html", TestPage.class);
-		try {
+		if (flag==true) 
+		{
+		     TestPage testpage = bobcatPageFactory.create("/content/etap/en.html", TestPage.class);
+		     try {
 			Thread.sleep(10000);
-			}
+			 }
 			catch(Exception e) {
 				
 			}
 		assertTrue(testpage.open().isDisplayed());
 		System.out.println("This is it");
-		/*Code for Login Page end */
-	    
-		/*Code for Registartion Page start */
-		/*SignInPage signinpage = bobcatPageFactory.create("/content/etap/LoginPage.html", SignInPage.class);
-		controller.execute(AemActions.LOG_IN);
-		signinpage.open().login("admin","admin");
-		TestPage testpage = bobcatPageFactory.create("/content/etap/en/homepage.html", TestPage.class);
-		assertTrue(testpage.open().isDisplayed());*/
-		/*Code for Login Page end */
+		}
+		else
+		{
+			//signinpage.open().login("chandreyee", "chandreyee");
+			log.info("Credentials entered are incorrect");
+		}
 	
 		
 	
